@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Giriş</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="custom-title">Hos Geldiniz</h1>
+        <form class="login-form" id="login-form">
+            <div id="error" class="error">Lütfen Geçerli bir kullanıcı adı ve şifre giriniz.</div>
+            <input type="text" placeholder="Kullanıcı Adı" class="custom-input" id="username">
+            <input type="password" placeholder="Şifre" class="custom-input" id="password">
+            <div class="remember-me-container">
+                <label>
+                    <input type="checkbox" id="rememberMe">
+                    Beni Hatırla
+                </label>
+            </div>
+            <button type="submit" class="custom-button">Giriş Yap</button>
+            <div class="create-new">
+                <label>
+                    <p>Henüz bir hesabınız yok mu?</p>
+                    <p>Oluşturmak için <a id="create-link" href="/sign-up">tıklayın.</a></p>
+                </label>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Koçtim, Koç Yazar Kasa Bilişim ve Yazılım Ticaret Ltd. Sti. Tüm Hakları Saklıdır.</p>
+    </footer>
+    
+    <script type="text/javascript" src="/js/login.js"></script>
+</body>
+

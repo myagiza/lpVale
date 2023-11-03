@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('fonts/Helvetica Neue/HelveticaNeueRegular.otf') format('opentype');
+}
+
+body {
+    font-family: 'HelveticaNeueRegular', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Yüklenirken gizle login-container */
+.login-container {
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+/* Hata mesajı için stil */
+.error {
+    color: #e74c3c;
+    display: none;
+}
+
+/* Hata mesajı gösterme animasyonu */
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+#error {
+    display: none;
+}
+
+.login-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+}
+
+.custom-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.custom-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #c0392b;
+}
+
+.remember-me-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.create-new {
+    align-self: center;
+    margin: 10px 0; /* Öğeler arasındaki boşluğu eşitler */
+}
+
+.create-new p {
+    margin: 0; 
+    margin-bottom: 6px; 
+}
+
+#create-link {
+    text-decoration: none;
+    color: #e74c3c;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
