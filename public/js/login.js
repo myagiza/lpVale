@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Sayfa yüklendiğinde login ekranını kayarak getir
     const loginContainer = document.querySelector(".login-container");
     loginContainer.style.transform = "translateX(0)";
+
+    // Bu kısmı ekleyin
+    setTimeout(function () {
+        loginContainer.classList.add("slide");
+    }, 500);
 });
 
 document.getElementById("login-form").addEventListener("submit", function (event) {

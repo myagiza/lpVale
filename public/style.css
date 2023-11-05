@@ -37,6 +37,10 @@ body {
     75% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
 }
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
 
 #error {
     display: none;
